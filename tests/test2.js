@@ -41,11 +41,12 @@ WebActions.assertTextPresent("Java Tutorial",po.timeouts.short)
 
 web.transaction('06.')
 WebActions.click(locators.btn_next)  
-// WebActions.assertTextPresent("JavaScript Introduction",po.timeouts.short)
+WebActions.assertTextPresent("Introduction",po.timeouts.short)
 
-// web.transaction('07.')
-// WebActions.click(locators.btn_prev)  
-// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+
+web.transaction('07.')
+WebActions.click(locators.btn_prev)  
+WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 // web.transaction('08.')
 // WebActions.click(locators.btn_html)  
