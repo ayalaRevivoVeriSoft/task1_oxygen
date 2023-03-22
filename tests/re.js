@@ -1,5 +1,15 @@
 
 web.init();
+web.open('https://www.w3schools.com/');
+
+web.selectWindow('title=W3Schools Online Web Tutorials');
+//       xpath:link: (//a[contains(text(),\'Learn Java\')])[4]
+// xpath:idRelative: //div[@id=\'main\']/div[8]/div/div[3]/div/a
+//       xpath:href: (//a[contains(@href, \'/java/default.asp\')])[2]
+//   xpath:position: //div/div[3]/div/a
+//              css: css=#main > div.w3-row.w3-padding-64.ws-black > div > div:nth-child(3) > div > a
+web.click('(//a[contains(text(),\'Learn Java\')])[4]');
+
 web.selectWindow('title=Java Tutorial');
 //       xpath:link: (//a[contains(text(),\'HTML\')])[1]
 // xpath:idRelative: //div[@id=\'topnav\']/div/div[1]/a[3]
