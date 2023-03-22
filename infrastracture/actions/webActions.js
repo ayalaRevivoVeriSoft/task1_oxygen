@@ -10,7 +10,7 @@ export class WebActions {
         web.open(url);
     };
 
-    static click = (locator) => {
+    static click = (locator) => { 
         log.info('clicking on button: ', locator);
         web.click(locator);
                 log.info(' on : ');
