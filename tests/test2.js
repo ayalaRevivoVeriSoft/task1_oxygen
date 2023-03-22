@@ -25,9 +25,8 @@ web.transaction('02.')
 //   // do something if style contains "none"
 // }
 web.transaction('03.')
-TestUtils.setValue(locators.searchInput,"java")
-WebActions.assertTextPresent('java',po.timeouts.short)
-WebActions.click(locators.c)  
+TestUtils.search(locators.searchInput,"java")
+
 
 web.transaction('04.')
 // log.info(locators.menu_list)
@@ -38,16 +37,23 @@ WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 
 web.transaction('06.')
-WebActions.click('(//a[contains(text(),\'Next ❯\')])[1]')  
-
+WebActions.click(locators.btn_next)  
 WebActions.assertTextPresent("JavaScript Introduction",po.timeouts.short)
 
 web.transaction('07.')
+WebActions.click(locators.btn_prev)  
 
-WebActions.click('(//a[contains(text(),\'❮ Previous\')])[1]');
+// WebActions.click('(//a[contains(text(),\'❮ Previous\')])[1]');
 WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 web.transaction('08.')
 
 web.click('(//a[contains(text(),\'HTML\')])[1]');
 WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
+
+web.transaction('09.')
+
+web.click('(//a[contains(text(),\'HTML Tables\')])[1]');
+WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
+
+

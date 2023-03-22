@@ -8,14 +8,12 @@ export class TestUtils {
     };
 
    
-static setValue(locator,item){
+static search(locator,item){
 WebActions.setValue(locator, item)
-         
+WebActions.assertTextPresent(item,10)
+
+WebActions.click(locators.searchButton)  
 }
 
 
-static assertArrayEquals(locator1,locator2){
-WebActions.assertArrayEquals(locator1, locator2)
-         
-}
 }

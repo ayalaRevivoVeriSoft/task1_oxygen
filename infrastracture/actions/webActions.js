@@ -127,12 +127,7 @@ export class WebActions {
         web.waitForWindow(locator, time);
     }
 
-  static assertArrayEquals = (locator1, locator2) => {
-        log.info(`assertArrayEquals ${locator1}`);
-        web.assertArrayEquals(locator1, locator2);
-    }
-
-
+  
     // Utils
     static getAttribute = (locator, attribute) => {
         log.info(`getAttribute ${locator} = ${attribute}`);
