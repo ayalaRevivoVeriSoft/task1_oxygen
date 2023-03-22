@@ -44,17 +44,17 @@ WebActions.click(locators.btn_next)
 WebActions.assertTextPresent("Introduction",po.timeouts.short)
 
 
-// web.transaction('07.')
-// WebActions.click(locators.btn_prev)  
-// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+web.transaction('07.')
+WebActions.click(locators.btn_prev)  
+WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
-// web.transaction('08.')
-// WebActions.click(locators.btn_html)  
+web.transaction('08.')
+WebActions.click(locators.btn_html)  
 
-// WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
+WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
 
-// web.transaction('09.')
-// WebActions.click(locators.btn_html_table)  
-// WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
+web.transaction('09.')
+WebActions.click(locators.btn_html_table)  
+WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
 
 
