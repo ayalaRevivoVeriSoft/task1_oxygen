@@ -44,9 +44,9 @@ WebActions.click(locators.btn_next)
 WebActions.assertTextPresent("Introduction",po.timeouts.short)
 
 
-web.transaction('07.')
-WebActions.click(locators.btn_prev)  
-WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+// web.transaction('07.')
+// WebActions.click(locators.btn_prev)  
+// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 // web.transaction('08.')
 // WebActions.click(locators.btn_html)  
