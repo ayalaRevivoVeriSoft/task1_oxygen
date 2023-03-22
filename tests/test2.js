@@ -39,8 +39,8 @@ WebActions.open(env.urlJavaT)
 WebActions.assertTextPresent("Java Tutorial",po.timeouts.short)
 
 
-// web.transaction('06.')
-// WebActions.click(locators.btn_next)  
+web.transaction('06.')
+WebActions.click(locators.btn_next)  
 // WebActions.assertTextPresent("JavaScript Introduction",po.timeouts.short)
 
 // web.transaction('07.')
