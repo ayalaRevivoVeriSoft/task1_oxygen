@@ -13,7 +13,7 @@ export class WebActions {
     static click = (locator) => {
         log.info(locator);
         log.info('waitForInteractable: ', locator);
-        web.waitForInteractable(locator,6000);
+        // web.waitForInteractable(locator,6000);
         log.info('clicking on button: ', locator);
         web.click(locator);
                 log.info(' on : ');
