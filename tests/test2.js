@@ -24,13 +24,13 @@ web.transaction('02.')
 //     log.info("fff")
 //   // do something if style contains "none"
 // }
-// web.transaction('03.')
-// TestUtils.search(locators.searchInput,"java")
+web.transaction('03.')
+TestUtils.search(locators.searchInput,"java")
 
 
-// web.transaction('04.')
-// // log.info(locators.menu_list)
-// // TestUtils.assertArrayEquals(locators.menu_list, locators.menu_list);
+web.transaction('04.')
+// log.info(locators.menu_list)
+// TestUtils.assertArrayEquals(locators.menu_list, locators.menu_list);
 
 // web.transaction('05.')
 // WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
