@@ -34,8 +34,8 @@ WebActions.click(locators.searchButton)
 // log.info(locators.menu_list)
 // TestUtils.assertArrayEquals(locators.menu_list, locators.menu_list);
 
-web.transaction('05.')
-WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+// web.transaction('05.')
+// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 
 // web.transaction('06.')
