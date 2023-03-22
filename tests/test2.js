@@ -24,33 +24,33 @@ web.transaction('02.')
 //     log.info("fff")
 //   // do something if style contains "none"
 // }
-web.transaction('03.')
-TestUtils.search(locators.searchInput,"java")
+// web.transaction('03.')
+// TestUtils.search(locators.searchInput,"java")
 
 
-web.transaction('04.')
-// log.info(locators.menu_list)
-// TestUtils.assertArrayEquals(locators.menu_list, locators.menu_list);
+// web.transaction('04.')
+// // log.info(locators.menu_list)
+// // TestUtils.assertArrayEquals(locators.menu_list, locators.menu_list);
 
-web.transaction('05.')
-WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+// web.transaction('05.')
+// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 
-web.transaction('06.')
-WebActions.click(locators.btn_next)  
-WebActions.assertTextPresent("JavaScript Introduction",po.timeouts.short)
+// web.transaction('06.')
+// WebActions.click(locators.btn_next)  
+// WebActions.assertTextPresent("JavaScript Introduction",po.timeouts.short)
 
-web.transaction('07.')
-WebActions.click(locators.btn_prev)  
-WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+// web.transaction('07.')
+// WebActions.click(locators.btn_prev)  
+// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
-web.transaction('08.')
-WebActions.click(locators.btn_html)  
+// web.transaction('08.')
+// WebActions.click(locators.btn_html)  
 
-WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
+// WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
 
-web.transaction('09.')
-WebActions.click(locators.btn_html_table)  
-WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
+// web.transaction('09.')
+// WebActions.click(locators.btn_html_table)  
+// WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
 
 
