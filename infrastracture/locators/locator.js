@@ -16,7 +16,7 @@ module.exports = {
         btn_prev:'a[class=\'w3-left w3-btn\']',
         btn_html:'(//a[contains(text(),\'HTML\')])[1]',
         btn_html_table:'//a[contains(text(), "HTML Tables")]',
-
+b_test:'(//a[contains(text(),\'Learn Java\')])[2]'
 
     }
 }
