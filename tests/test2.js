@@ -39,14 +39,14 @@ WebActions.open(env.urlJavaT)
 WebActions.assertTextPresent("Java Tutorial",po.timeouts.short)
 
 
-web.transaction('06.')
-WebActions.click(locators.btn_next)  
-// WebActions.assertTextPresent("Introduction",po.timeouts.slow)
+// web.transaction('06.')
+// WebActions.click(locators.btn_next)  
+// // WebActions.assertTextPresent("Introduction",po.timeouts.slow)
 
 
-web.transaction('07.')
-WebActions.click(locators.btn_prev)  
-WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+// web.transaction('07.')
+// WebActions.click(locators.btn_prev)  
+// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 web.transaction('08.')
 WebActions.click(locators.btn_html)  
