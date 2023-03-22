@@ -14,7 +14,7 @@
 module.exports = {
 
     timeouts: {
-            standart: 10*1000,
+            standart: 1000,
             short: 1000,
             slow: 60*1000
     }

@@ -51,8 +51,6 @@ WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
 
 web.transaction('09.')
 WebActions.click(locators.btn_html_table)  
-
-
 WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
 
 
