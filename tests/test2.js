@@ -42,18 +42,17 @@ WebActions.assertTextPresent("JavaScript Introduction",po.timeouts.short)
 
 web.transaction('07.')
 WebActions.click(locators.btn_prev)  
-
-// WebActions.click('(//a[contains(text(),\'❮ Previous\')])[1]');
 WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
 web.transaction('08.')
+WebActions.click(locators.btn_html)  
 
-web.click('(//a[contains(text(),\'HTML\')])[1]');
 WebActions.assertTextPresent("HTML Tutorial",po.timeouts.short)
 
 web.transaction('09.')
+WebActions.click(locators.btn_html_table)  
 
-web.click('(//a[contains(text(),\'HTML Tables\')])[1]');
+
 WebActions.assertTextPresent("HTML Tables",po.timeouts.short)
 
 

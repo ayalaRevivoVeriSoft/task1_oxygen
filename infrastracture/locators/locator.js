@@ -14,9 +14,9 @@ module.exports = {
         div_search:'id=listofsearchresults',
         btn_next:'//a[@class="w3-right w3-btn"][contains(text(), "Next ❯")]',
         btn_prev:'a[class=\'w3-left w3-btn\']',
-        btn_html:'linkText =\'HTML\'',
-        btn_c:'id=img_mylearning',
-        c:'//div[@id=\'listofsearchresults\']/a[1]',
+        btn_html:'//a[@class="ww3-bar-item w3-button"][contains(text(), "HTML")]',
+        btn_html_table:'//a[contains(text(), "HTML Tables")]',
+
 
     }
 }
