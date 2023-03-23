@@ -1,5 +1,5 @@
 import {TestUtils} from "../infrastracture/testUtils/TestUtils";
-import {WebActions} from "../infrastracture/actions/webActions";
+// import {WebActions} from "../infrastracture/actions/webActions";
 // import {locators} from "../infarstracture/locators/locator";
 import {locators} from "../infrastracture/locators/locator";
 
@@ -11,63 +11,74 @@ import {locators} from "../infrastracture/locators/locator";
 
 
 web.transaction('01')
-WebActions.init()
-WebActions.open(env.urlHomePage)
-WebActions.isExist(locators.searchInput,"style")
+web.init()
+web.open(env.urlHomePage)
+web.isExist(locators.searchInput)
 web.transaction('02.')
-WebActions.setValue(locators.searchInput,"java")
-assert.contain(WebActions.getAttribute(locators.div_search,"style"),"block","is exist")
-log.info(web.getValue(locators.list_search,1000))
-
+web.type(locators.searchInput,"java")
+assert.contain(web.getAttribute(locators.div_search,"style"),"block","is exist")
 var els = web.findElements(locators.list_search);
 for (let el of els) {
  var text = web.getText(el);
- log.info(text);
+ assert.contain(text.toLowerCase(),"java")
+}
+
+web.transaction('03.')
+var els = web.findElements(locators.list_search);
+for (let el of els) {
+    var text = web.getText(el);
+
+if(text.toLowerCase(),"java tutorial"){
+     web.click(el)
+break
+}
 }
 
 
-// WebActions.assertTextPresent('JavaScript Tutorial',po.timeouts.short)
-// var div_search =web.getElementByLocator("listofsearchresults");
-// var style = div_search.getAttribute("style");
-// if (style.indexOf("none") > -1) {
-//     log.info("fff")
-//   // do something if style contains "none"
+web.transaction('04.')
+log.info(params.list_output)
+// var els = web.findElements(locators.list_output);
+// var list_output_frome_web=[]
+// for (let el of els) {
+// list_output_frome_web.push((web.getText(el)).toLowerCase())
 // }
-// web.transaction('03.')
-// WebActions.setValue(locators.searchInput, "java")
-// WebActions.assertTextPresent("java",10)
-
-// WebActions.click(locators.searchButton)  
-
-// web.transaction('04.')
-// TestUtils.assertArrayEquals(locators.menu_list, locators.menu_list);
+// log.info(list_output_frome_web)
+// log.info(params.list_output)
+//  assert.equal(list_output_frome_web,params.list_output);
 
 
 
 
 
-// web.transaction('05.')
-// WebActions.open(env.urlJavaT)
+web.transaction('05.')
 
-// WebActions.assertTextPresent("Java Tutorial",po.timeouts.short)
-
-
-// web.transaction('06.')
-// WebActions.click(locators.btn_next)  
-// // WebActions.assertTextPresent("Introduction",po.timeouts.slow)
+web.assertTextPresent("Java Tutorial",po.timeouts.short)
 
 
-// web.transaction('07.')
-// WebActions.click(locators.btn_prev)  
-// WebActions.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
+web.transaction('06.')
+web.click(locators.btn_next)  
+web.assertTextPresent("Introduction",po.timeouts.slow)
 
-// web.transaction('08.')
-// WebActions.click(locators.btn_html)  
 
-// WebActions.assertTextPresent("HTML Tutorial",po.timeouts.slow)
+web.transaction('07.')
+web.click(locators.btn_prev)  
+web.assertTextPresent("JavaScript Tutorial",po.timeouts.short)
 
-// web.transaction('09.')
-// WebActions.click(locators.btn_html_table)  
-// WebActions.assertTextPresent("HTML Tables",po.timeouts.slow)
+web.transaction('08.')
+web.click(locators.btn_html)  
+
+web.assertTextPresent("HTML Tutorial",po.timeouts.slow)
+
+web.transaction('09.')
+web.click(locators.btn_html_table)  
+web.assertTextPresent("HTML Tables",po.timeouts.slow)
+
+web.transaction('10.')
+web.click(locators.btn_html_table)  
+web.assertTextPresent("HTML Tables",po.timeouts.slow)
+
+web.transaction('11.')
+web.click(locators.btn_html_table)  
+web.assertTextPresent("HTML Tables",po.timeouts.slow)
 
 

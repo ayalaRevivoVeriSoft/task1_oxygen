@@ -19,6 +19,12 @@ export class WebActions {
                 log.info(' on : ');
 
     };
+   static getText = (locator) => {
+        web.getText(locator);
+    };
+    static findElements = (locator) => {
+        web.findElements(locator);
+    };
 
     static doubleClick = (locator) => {
         log.info('double click on button: ', locator);
