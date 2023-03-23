@@ -8,10 +8,10 @@
 // web.transaction('03. Open Elements Section')
 // web.click('//div[@class="card-body"]//*[contains(text(), "Elements")]')
 
-// var os = require('os')
-// os.userInfo().homedir
+var os = require('os')
+os.userInfo().homedir
 
-// var XL_1 = utils.readXlsx('1.xlsx')
+var XL_1 = utils.readXlsx('1.xlsx')
 // var XL_2 = utils.readXlsx(`${os.userInfo().homedir}//desktop//2.xlsx`)
 
 log.info(params.user1)
