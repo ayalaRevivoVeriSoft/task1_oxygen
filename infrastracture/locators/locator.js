@@ -16,7 +16,8 @@ module.exports = {
         btn_prev:'a[class=\'w3-left w3-btn\']',
         btn_html:'(//a[contains(text(),\'HTML\')])[1]',
         btn_html_table:'(//a[contains(text(),\'HTML Tables\')])[1]',
-b_test:'(//a[contains(text(),\'Learn Java\')])[2]'
+b_test:'(//a[contains(text(),\'Learn Java\')])[2]',
+list_search:'//div[@id="listofsearchresults"]//*[@class="search_item"]'
 
     }
 }

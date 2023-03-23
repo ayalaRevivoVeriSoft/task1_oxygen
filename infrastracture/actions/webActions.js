@@ -10,7 +10,10 @@ export class WebActions {
         web.open(url);
     };
 
-    static click = (locator) => { 
+    static click = (locator) => {
+        // log.info(locator);
+        // log.info('waitForInteractable: ', locator);
+        // // web.waitForInteractable(locator,6000);
         log.info('clicking on button: ', locator);
         web.click(locator);
                 log.info(' on : ');
@@ -76,7 +79,6 @@ export class WebActions {
         log.info(`Send keys ${keysArr}`);
         web.sendKeys(keysArr)
     }
-
 
     // Asserts
     static type = (locator, value) => {
