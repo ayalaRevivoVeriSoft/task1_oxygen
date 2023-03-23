@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import {TestUtils} from "../infrastracture/testUtils/TestUtils";
 // import {WebActions} from "../infrastracture/actions/webActions";
 // import {locators} from "../infarstracture/locators/locator";
@@ -7,7 +13,6 @@ import {locators} from "../infrastracture/locators/locator";
 
 // WebActions.init()
 // WebActions.open("https://www.hamichlol.org.il/%D7%A2%D7%9E%D7%95%D7%93_%D7%A8%D7%90%D7%A9%D7%99")
-
 
 
 web.transaction('01')
@@ -23,6 +28,8 @@ for (let el of els) {
  assert.contain(text.toLowerCase(),"java")
 }
 
+
+
 web.transaction('03.')
 var els = web.findElements(locators.list_search);
 for (let el of els) {
@@ -33,7 +40,7 @@ if(text.toLowerCase(),"java tutorial"){
 break
 }
 }
-
+web.
 
 web.transaction('04.')
 log.info(params.list_output)

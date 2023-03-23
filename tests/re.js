@@ -1,9 +1,18 @@
 
 web.init();
-web.selectWindow('title=W3Schools Online Web Tutorials');
-// xpath:idRelative: //div[@id=\'listofsearchresults\']/a[2]
-//       xpath:href: (//a[contains(@href, \'/java/default.asp\')])[2]
-//   xpath:position: //form/div/a[2]
-//             link: link=JAVA Tutorial
-//              css: css=#listofsearchresults > a:nth-child(2)
-web.click('//div[@id=\'listofsearchresults\']/a[2]');
+web.selectWindow('title=Documentation for Visual Studio Code');
+// xpath:idRelative: //div[@id=\'main-content\']/div/div/div[2]/div[2]/p
+//   xpath:position: //div[2]/div[2]/p
+//              css: css=#main-content > div > div > div.col-sm-9.col-md-8.body > div:nth-child(2) > p
+web.click('//div[@id=\'main-content\']/div/div/div[2]/div[2]/p');
+
+// xpath:idRelative: //a[@id=\'nav-download\']/span
+//   xpath:position: //li[3]/a/span
+//              css: css=#nav-download > span
+web.click('//a[@id=\'nav-download\']/span');
+
+web.selectWindow('title=Download Visual Studio Code - Mac, Linux, Windows');
+// xpath:idRelative: //div[@id=\'main-content\']/div/div[1]/div/div/h1
+//   xpath:position: //h1
+//              css: css=#main-content > div > div:nth-child(1) > div > div > h1
+web.click('//div[@id=\'main-content\']/div/div[1]/div/div/h1');
