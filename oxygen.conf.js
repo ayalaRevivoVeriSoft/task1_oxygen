@@ -9,7 +9,7 @@ module.exports = {
         ]
     }],
 
-    modules: ['web', 'log', 'assert','utils'],
+    modules: ['web','ayala', 'log', 'assert','utils'],
 
     reporting: {
         reporters: ['html', 'json']
