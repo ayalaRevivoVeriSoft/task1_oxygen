@@ -8,10 +8,10 @@
 // web.transaction('03. Open Elements Section')
 // web.click('//div[@class="card-body"]//*[contains(text(), "Elements")]')
 
-var os = require('os')
-os.userInfo().homedir
-
-var XL_1 = utils.readXlsx(`${os.userInfo().homedir}//task1_oxygen//1.xlsx`)
+const path = require('path')
+const file = path.join(__dirname, '/1.xlsx')
+log.info(file)
+var XL_1 = utils.readXlsx(file)
 // var XL_2 = utils.readXlsx(`${os.userInfo().homedir}//desktop//2.xlsx`)
 
 for (let x = 0; x < XL_1.length; x++) {
