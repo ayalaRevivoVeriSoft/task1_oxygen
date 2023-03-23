@@ -11,7 +11,7 @@
 var os = require('os')
 os.userInfo().homedir
 
-var XL_1 = utils.readXlsx('${os.userInfo().homedir}//task1_oxygen//1.xlsx')
+var XL_1 = utils.readXlsx(`${os.userInfo().homedir}//task1_oxygen//1.xlsx`)
 // var XL_2 = utils.readXlsx(`${os.userInfo().homedir}//desktop//2.xlsx`)
 
 for (let x = 0; x < XL_1.length; x++) {
