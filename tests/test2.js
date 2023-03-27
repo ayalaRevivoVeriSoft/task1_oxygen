@@ -1,10 +1,5 @@
 
-
-
-
-
-
-import {TestUtils} from "../infrastracture/testUtils/TestUtils";
+// import {TestUtils} from "../infrastracture/testUtils/TestUtils";
 // import {WebActions} from "../infrastracture/actions/webActions";
 // import {locators} from "../infarstracture/locators/locator";
 import {locators} from "../infrastracture/locators/locator";
@@ -40,21 +35,24 @@ if(text.toLowerCase(),"java tutorial"){
 break
 }
 }
-web.
-
 web.transaction('04.')
-log.info(params.list_output)
-// var els = web.findElements(locators.list_output);
-// var list_output_frome_web=[]
-// for (let el of els) {
-// list_output_frome_web.push((web.getText(el)).toLowerCase())
-// }
-// log.info(list_output_frome_web)
-// log.info(params.list_output)
-//  assert.equal(list_output_frome_web,params.list_output);
+const path = require('path')
+const file = path.join(__dirname, '/1.xlsx')
+var XL_1 = utils.readXlsx(file)
+var list_output_frome_xl=[]
+for (let x = 0; x < XL_1.length; x++) {
+    list_output_frome_xl.push(XL_1[x].list_output)
+}
+log.info(list_output_frome_xl)
+var els = web.findElements(locators.list_output);
+var list_output_frome_web=[]
+for (let el of els) {
+list_output_frome_web.push((web.getHTML(el,false)).toLowerCase())
+}
+log.info(list_output_frome_web)
 
 
-
+  
 
 
 web.transaction('05.')
