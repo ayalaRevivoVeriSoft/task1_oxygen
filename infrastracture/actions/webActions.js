@@ -20,10 +20,13 @@ export class WebActions {
 
     };
    static getText = (locator) => {
-        web.getText(locator);
+      return  web.getText(locator);
     };
-    static findElements = (locator) => {
-        web.findElements(locator);
+   static findElements = (locator) => {
+      return web.findElements(locator)
+    };
+    static getHTML = (locator,includeElementTag) => {
+      return web.getHTML(locator,includeElementTag)
     };
 
     static doubleClick = (locator) => {

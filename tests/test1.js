@@ -27,3 +27,8 @@ log.info(params)
 // log.info(params.list_output)
 
 // web.type('name=search', 'Tony');
+
+const validationData = require('./validationData.json');
+for (let validationStr of validationData) {
+    // validationStr
+}

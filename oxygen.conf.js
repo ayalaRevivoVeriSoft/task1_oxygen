@@ -9,7 +9,7 @@ module.exports = {
         ]
     }],
 
-    modules: ['web','ayala', 'log', 'assert','utils'],
+    modules: ['web','mailinator','email','ayala', 'log', 'assert','utils'],
 
     reporting: {
         reporters: ['html', 'json']
